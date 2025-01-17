@@ -6,20 +6,19 @@
 /*   By: ababdoul <ababdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 21:30:39 by ababdoul          #+#    #+#             */
-/*   Updated: 2025/01/15 21:51:27 by ababdoul         ###   ########.fr       */
+/*   Updated: 2025/01/18 00:51:42 by ababdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
- # ifndef MINITALK_H
- #  define MINITALK_H
+#ifndef MINITALK_H
+# define MINITALK_H
 
-#include <signal.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
+# include <signal.h>
+# include <unistd.h>
+# include <stdlib.h>
 # include <stdarg.h>
 
-int	ft_atoi(const char *str);
+int				ft_atoi(const char *str);
 int				ft_putchar(int c);
 int				ft_putnbr(int nb);
 int				ft_putstr(char *str);
