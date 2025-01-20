@@ -6,7 +6,7 @@
 /*   By: ababdoul <ababdoul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 21:35:01 by ababdoul          #+#    #+#             */
-/*   Updated: 2025/01/21 00:22:30 by ababdoul         ###   ########.fr       */
+/*   Updated: 2025/01/21 00:40:47 by ababdoul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ void	send_char(pid_t pid, char c)
 		bit++;
 	}
 }
-int check_av(char *str)
+
+int	check_av(char *str)
 {
 	int	i;
 	int	found_digit;
@@ -52,6 +53,7 @@ int check_av(char *str)
 	}
 	return (found_digit);
 }
+
 int	main(int argc, char **argv)
 {
 	pid_t	server_pid;
@@ -69,7 +71,6 @@ int	main(int argc, char **argv)
 		ft_printf("invalid pid :( \n");
 		return (1);
 	}
-	
 	server_pid = ft_atoi(argv[1]);
 	message = argv[2];
 	i = 0;
